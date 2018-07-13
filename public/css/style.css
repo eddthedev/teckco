@@ -1,0 +1,739 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+@keyframes fadeIn {
+  to{
+    opacity: 1;
+  }
+}
+
+.fade-in{
+  opacity: 0;
+   animation: fadeIn 0.5s ease-in 1 forwards;
+}
+/*GLOBAL*/
+.container{
+  width: 70%;
+  margin: 0 auto;
+}
+.service,.price{
+  background-attachment: fixed;
+}
+.active{
+  color: #cc3232;
+}
+/*END GLOBAL*/
+.logo {
+  position: fixed;
+  float: left;
+  /*margin: 16px 36px;*/
+  color: #CC3232;
+  font-weight: bold;
+  font-size: 26px;
+}
+.logo span{
+  color: #fff;
+}
+/*NAV AREA*/
+.navbar{
+  /*background: red;*/
+  width: 100%;
+  padding: 30px 0;
+  position: fixed;
+  top: 0px;
+  text-align: right;
+  transition: .5s
+  z-index: 100;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  color: #fffl;
+  font-size: 1rem;
+  font-family: sans-serif;
+
+  /*transition: 1s;*/
+}
+.navbar ul li a{
+  border-radius: 2px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: all .5s ease-in-out;
+}
+.navbar ul li a:hover{
+  color: #CC3232;
+}
+
+
+/*Menu icon CSS*/
+.menu-icon {
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+/*END NAV AREA*/
+/*MAIN*/
+#titleBg{
+  background:linear-gradient(10deg,rgba(0,0,0,.1) 0,#000 100%), url("https://monsterdesignstudios.com/wp-content/uploads/2014/09/website-design-slider-background-stockton.jpg");
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 250px 0;
+  height: 100vh;
+  color: #fff;
+}
+#titleBg h1{
+  font-size: 40px;
+  font-weight: 500;
+  padding: 30px 0;
+  margin: 0;
+}
+#titleBg p{
+  font-size: 20px;
+}
+#titleBg .topBtns{
+  padding: 30px 0;
+}
+#titleBg .topBtns a{
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF ;
+  background:#CC3232 ;
+  border-radius: 3px;
+  padding: 10px 20px;
+  transition:  .7s ease-in-out;
+}
+#titleBg .topBtns a:hover{
+  background: #fff;
+  color: #cc3232;
+}
+/*END MAIN*/
+/*ABOUT*/
+#about{
+  padding: 100px 0;
+  background: #eee;
+}
+#about h2{
+  text-align: center;
+}
+#about h4{
+  padding: 30px 0 100px 0;
+  text-align: center;
+}
+.boxGrid{
+display: grid;
+grid-template-columns: 50% 50%;
+grid-row-gap: 1em;
+grid-auto-rows: minmax(200px, auto);
+}
+.boxGrid .missionBox{
+  max-width: 650px;
+}
+.boxGrid .missionBox h5{
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #cc3232;
+  padding-bottom: 10px;
+}
+.boxGrid .missionBox p{
+  padding: 20px 50px 20px 0;
+}
+.boxGrid .missionBox a{
+  text-decoration: none;
+  padding: 10px 15px;
+  background: #cc3232;
+  color: white;
+  border-radius: 4px;
+  transition:  .7s ease-in-out;
+}
+.boxGrid .missionBox a:hover{
+  background: #fff;
+  color: #cc3232;
+}
+.boxGrid .imgBox .img{
+  background: url('https://dbwgapw6amg93.cloudfront.net/wp-content/uploads/2017/08/developers-working-together.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 400px;
+    max-width: 750px;
+}
+/*END ABOUT*/
+/*SERVICES*/
+#service{
+  background-image:linear-gradient(10deg,rgba(0,0,0,.1) 0,#000 100%), url('http://wallpoper.com/images/00/27/54/51/usb-technology_00275451.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px;
+}
+.serviceGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2em;
+  grid-auto-rows: minmax(200px, auto);
+}
+.serviceBox{
+  background: rgba(20, 20, 20, 0.70);
+  border-radius: 5px;
+
+}
+.serviceBox .sLogo{
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+  padding: 20px 0;
+}
+.serviceBox h3{
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+  /*padding-bottom: 10px;*/
+}
+.serviceBox p{
+  text-align: center;
+  color: #fff;
+  padding: 20px 10px;
+}
+/*END SERVICES*/
+/*IMG GALLERY*/
+#imgGallery{
+  padding: 100px;
+  background: #eee;
+}
+#imgGallery h2{
+  color: #cc3232;
+  padding: 30px 0;
+}
+.imgCont{
+  /*max-width: 1200px;*/
+  margin: auto;
+  border: #fff solid 3px;
+  background: #fff;
+}
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  /*grid-auto-rows: minmax(5px, auto);*/
+}
+/*END IMG GALLERY*/
+/*PRICE*/
+#price{
+  background-image:linear-gradient(10deg,rgba(0,0,0,.1) 0,#000 100%), url('http://eskipaper.com/images/cool-wallpapers-hd-3.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px;
+  color: #fff;
+}
+.priceGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2em;
+  grid-auto-rows: minmax(200px, auto);
+
+}
+.priceBox{
+  background: rgba(20, 20, 20, 0.70);
+  border-radius: 5px;
+  text-align: center;
+}
+.priceBox h2{
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 20px 0;
+  /*border-bottom: 1px #eee solid;*/
+}
+.priceBox .cash{
+  padding: 20px 0;
+  border-bottom: .5px #eee solid;
+}
+.priceBox h4{
+  font-weight: 300;
+}
+.priceBox span{
+  color: #cc3232;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+.priceBox .liCon{
+  padding: 20px 0;
+  border-bottom: .5px #eee solid;
+}
+.priceBox ul li{
+  list-style: none;
+  text-transform: capitalize;
+
+}
+.priceBox .quoteBtn{
+  padding: 30px 0;
+}
+.priceBox a{
+  text-decoration: none;
+  padding: 10px 15px;
+  background: #cc3232;
+  color: #fff;
+  border-radius: 4px;
+  transition: .7s ease-in-out;
+}
+.priceBox a:hover{
+  background: #fff;
+  color: #cc3232;
+}
+/*END PRICE*/
+/*QUOTE*/
+#quote{
+  background: #eee;
+  padding: 100px 0;
+}
+.quoteGrid{
+display: grid;
+grid-template-columns: 50% 50%;
+grid-row-gap: 1em;
+grid-auto-rows: minmax(200px, auto);
+}
+.needAq h2{
+  color: #cc3232;
+  padding-bottom: 20px;
+}
+.needAq p{
+  padding: 0px 50px 20px 0;
+}
+.formCon{
+  text-align: center;
+}
+.inp{
+  padding: 5px 10px;
+  width: 49%;
+  height: 35px;
+}
+.sub{
+  height: 35px;
+  margin-top: 20px;
+  padding: 5px 10px;
+  text-align: left;
+  width: 98%;
+}
+.message{
+  width: 98%;
+  height: 100px;
+  margin-top: 20px;
+  padding: 5px 10px;
+}
+.subj{
+  text-align: center;
+  padding-top: 10px;
+}
+.subj a{
+  text-decoration: none;
+  padding: 10px 35px;
+  background: #cc3232;
+  color: #fff;
+  border-radius: 4px;
+  transition: .7s ease-in-out;
+}
+.subj a:hover{
+  background: #fff;
+    color: #cc3232;
+}
+/*END QUOTE*/
+footer{
+  background:black;
+  padding: 50px 0;
+}
+.contact{
+  font-size: 1.1rem;
+  display: inline-block;
+}
+.contact a{
+  text-decoration: none;
+  color: #eee;
+}
+.contact i{
+  font-size: 1.5rem;
+  color: #cc3232;
+  /*color: #fff;*/
+}
+.ssm{
+  float: right;
+  font-size: 1.5rem;
+  /*margin-right: 10px;*/
+}
+.ssm a{
+  color: #cc3232;
+  padding: 10px 10px;
+  transition: .7s ease-in-out;
+}
+.ssm a:hover{
+  color: #fff;
+}
+.copy{
+  padding-top: 60px;
+  text-align: center;
+}
+
+
+/*PHONE*/
+@media (max-width: 767px) {
+  .menu-icon{
+    display: block;
+  }
+  /*NAV AREA*/
+  .menu,.logo{
+    display: none;
+  }
+  #nav{
+    padding: 0;
+  }
+  /*#titleBg{
+    padding: 100px 0;
+  }*/
+  #titleBg h1{
+
+    font-size: 21px;
+    padding-bottom: 10px;
+  }
+  #titleBg p{
+    font-size: 15px;
+  }
+  #titleBg .topBtns{
+    padding-top: 13px;
+
+  }
+  #titleBg .topBtns a{
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+  /*ABOUT*/
+  #about{
+    padding: 50px 0;
+  }
+  #about h2{
+    font-size: 1.2rem;
+  }
+  #about h4{
+    font-size: .7rem;
+    padding: 10px 0 15px 0;
+    text-align: center;
+  }
+  #about h5{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+  .boxGrid{
+  grid-template-columns: 1fr;
+  }
+  .boxGrid .missionBox p{
+    padding: 10px 0 15px 0;
+  }
+  .boxGrid .missionBox .readBtn{
+    font-size: 12px;
+    padding: 10px 10px;
+    text-align: center;
+  }
+  .boxGrid .imgBox {
+    grid-row: 1 / 2;
+  }
+  /*SERVICES*/
+  #service{
+    padding: 50px 20px;
+  }
+  .serviceGrid{
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+  }
+  /*IMG GALLERY*/
+  #imgGallery{
+    padding: 50px 0;
+    background: #eee;
+  }
+  #imgGallery h2{
+    text-align: center;
+  }
+  /*PRICE*/
+  #price{
+    padding: 50px 0;
+  }
+  .quoteBtn a{
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  .priceGrid{
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+  }
+  /*QUOTE*/
+  #quote{
+    padding: 50px 0;
+  }
+  .quoteGrid{
+  grid-template-columns: 1fr;
+  }
+  .needAq p{
+    padding: 0;
+    width: 100%;
+    /*text-align: center;*/
+  }
+
+  #quote h2{
+    text-align: center;
+  }
+  .subj a{
+    font-size: 1em;
+    padding: 10px 50px;
+  }
+  /*Footer*/
+  footer{
+    padding: 30px 0;
+  }
+  .contact{
+    display: none;
+    font-size: .9rem;
+  }
+  .contact a{
+    font-size: .9em;
+  }
+  .contact i{
+    font-size: 1rem;
+  }
+  .ssm{
+    width: 100%;
+    text-align: center;
+    /*float: right;*/
+    /*font-size: 1rem;*/
+  }
+  .ssm a{
+    padding: 10px 5px;
+  }
+}
+/*======================================================*/
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    display: none;
+  }
+  /*NAV AREA*/
+  .navbar{
+    padding: 20px 0;
+    text-align: center;
+  }
+  .navbar ul li a{
+    padding: 10px 10px;
+  }
+  #titleBg h1{
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  #titleBg p{
+    font-size: 14px;
+  }
+  #titleBg .topBtns{
+    padding: 15px 0;
+  }
+  #titleBg .topBtns a{
+    padding: 10px 30px;
+  }
+  /*ABOUT*/
+  #about{
+    padding: 80px 0;
+  }
+  #about h2{
+    font-size: 1.3rem;
+  }
+  #about h4{
+    padding: 10px 0 20px 0;
+    text-align: center;
+  }
+  #about h5{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.3em;
+  }
+  .boxGrid{
+  grid-template-columns: 1fr;
+  }
+  .boxGrid .missionBox p{
+    padding: 15px 0;
+  }
+  .boxGrid .missionBox .readBtn{
+    text-align: center;
+  }
+  .boxGrid .missionBox .readBtn a{
+      padding: 10px 30px;
+  }
+  .boxGrid .imgBox {
+    grid-row: 1 / 2;
+  }
+  /*SERVICES*/
+  #service{
+    padding: 90px;
+  }
+  .serviceGrid{
+    grid-template-columns: 1fr;
+      grid-row-gap: 1em;
+  }
+  /*IMG GALLERY*/
+  #imgGallery{
+    padding: 50px 0;
+    background: #eee;
+  }
+  #imgGallery h2{
+    text-align: center;
+  }
+  /*PRICE*/
+  .priceGrid{
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+  }
+  .quoteBtn a{
+    padding: 10px 30px;
+  }
+  /*QUOTE*/
+  #quote h2{
+    text-align: center;
+  }
+  .quoteGrid{
+  grid-template-columns: 1fr;
+  }
+  /*Footer*/
+  .contact{
+    /*font-size: 1.1rem;*/
+    display: block;
+    width: 100%;
+  }
+  .contact a{
+    font-size: .9em;
+  }
+  .contact i{
+    font-size: 1.3rem;
+  }
+  .ssm{
+    /*display: block;*/
+    float: right;
+    /*font-size: 1.3rem;*/
+  }
+  .ssm a{
+    padding: 10px 5px;
+  }
+}
+/*======================================================*/
+/*laptop*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .logo {
+    font-size: 1.7em;
+  }
+  /*NAV AREA*/
+  .navbar{
+    padding: 20px 0;
+  }
+  .navbar ul li a{
+    padding: 10px 10px;
+  }
+  /*ABOUT*/
+
+  #about h2{
+    font-size: 1.3rem;
+  }
+  #about h5{
+    font-size: 1.3em;
+  }
+  .boxGrid .missionBox .readBtn a{
+      padding: 10px 30px;
+  }
+
+
+}
+/*======================================================*/
+/*extra big*/
+@media (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.pimg2 .con{
+
+    background-color: rgba(225,225,225);
+    min-height: 400px;
+}*/
+
+
+
+
+/*.pimg1{
+  background-image: url('https://www.brookings.edu/wp-content/uploads/2017/11/metro_20171121_tech-empowers-tech-polarizes-mark-muro.jpg');
+  min-height: 400px;
+}*/
+
+
+
+
+@media (max-width:568px) {
+  .pimg1,.pimg2,.pimg3{
+    background-attachment: scroll;
+  }
+}
