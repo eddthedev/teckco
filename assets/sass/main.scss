@@ -1,12 +1,13 @@
-@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 @import "reset";
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body,html{
+body,
+html {
   height: 100%;
   margin: 0;
   font-size: 16px;
@@ -16,24 +17,25 @@ body,html{
   color: #666;
 }
 @keyframes fadeIn {
-  to{
+  to {
     opacity: 1;
   }
 }
 
-.fade-in{
+.fade-in {
   opacity: 0;
-   animation: fadeIn 0.5s ease-in 1 forwards;
+  animation: fadeIn 0.5s ease-in 1 forwards;
 }
 /*GLOBAL*/
-.container{
+.container {
   width: 70%;
   margin: 0 auto;
 }
-.service,.price{
+.service,
+.price {
   background-attachment: fixed;
 }
-.active{
+.active {
   color: #cc3232;
 }
 /*END GLOBAL*/
@@ -41,38 +43,38 @@ body,html{
   position: fixed;
   float: left;
   /*margin: 16px 36px;*/
-  color: #CC3232;
+  color: #cc3232;
   font-weight: bold;
   font-size: 26px;
 }
-.logo{
-  span{
+.logo {
+  span {
     color: #fff;
   }
 }
 /*NAV AREA*/
-.navbar{
+.navbar {
   /*background: red;*/
   width: 100%;
   padding: 30px 0;
   position: fixed;
   top: 0px;
   text-align: right;
-  transition: .5s;
+  transition: 0.5s;
   z-index: 100;
-  ul{
-    li{
+  ul {
+    li {
       list-style: none;
       display: inline-block;
-      color: #fffl;
+      color: #fff;
       font-size: 1rem;
       font-family: sans-serif;
-      a{
+      a {
         border-radius: 2px;
         padding: 10px 15px;
         text-decoration: none;
         color: #fff;
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
     }
   }
@@ -85,10 +87,9 @@ body,html{
 //   color: #fff;
 //   transition: all .5s ease-in-out;
 // }
-.navbar ul li a:hover{
-  color: #CC3232;
+.navbar ul li a:hover {
+  color: #cc3232;
 }
-
 
 /*Menu icon CSS*/
 .menu-icon {
@@ -103,8 +104,9 @@ body,html{
 }
 /*END NAV AREA*/
 /*MAIN*/
-#titleBg{
-  background:linear-gradient(10deg,rgba(0,0,0,.1) 0,#000 100%), url("https://monsterdesignstudios.com/wp-content/uploads/2014/09/website-design-slider-background-stockton.jpg");
+#titleBg {
+  background: linear-gradient(10deg, rgba(0, 0, 0, 0.1) 0, #000 100%),
+    url("https://monsterdesignstudios.com/wp-content/uploads/2014/09/website-design-slider-background-stockton.jpg");
   text-align: center;
   background-position: center;
   background-size: cover;
@@ -113,134 +115,135 @@ body,html{
   height: 100vh;
   color: #fff;
 }
-#titleBg h1{
+#titleBg h1 {
   font-size: 40px;
   font-weight: 500;
   padding: 30px 0;
   margin: 0;
 }
-#titleBg p{
+#titleBg p {
   font-size: 20px;
 }
-#titleBg .topBtns{
+#titleBg .topBtns {
   padding: 30px 0;
 }
-#titleBg .topBtns a{
+#titleBg .topBtns a {
   margin-left: 10px;
   font-size: 12px;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
-  color: #FFF ;
-  background:#CC3232 ;
+  color: #fff;
+  background: #cc3232;
   border-radius: 3px;
   padding: 10px 20px;
-  transition:  .7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
-#titleBg .topBtns a:hover{
+#titleBg .topBtns a:hover {
   background: #fff;
   color: #cc3232;
 }
 /*END MAIN*/
 /*ABOUT*/
-#about{
+#about {
   padding: 100px 0;
   background: #eee;
 }
-#about h2{
+#about h2 {
   text-align: center;
 }
-#about h4{
+#about h4 {
   padding: 30px 0 100px 0;
   text-align: center;
 }
-.boxGrid{
-display: grid;
-grid-template-columns: 50% 50%;
-grid-row-gap: 1em;
-grid-auto-rows: minmax(200px, auto);
+.boxGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 1em;
+  grid-auto-rows: minmax(200px, auto);
 }
-.boxGrid .missionBox{
+.boxGrid .missionBox {
   max-width: 650px;
 }
-.boxGrid .missionBox h5{
+.boxGrid .missionBox h5 {
   font-weight: 600;
   font-size: 1.4rem;
   color: #cc3232;
   padding-bottom: 10px;
 }
-.boxGrid .missionBox p{
+.boxGrid .missionBox p {
   padding: 20px 50px 20px 0;
 }
-.boxGrid .missionBox a{
+.boxGrid .missionBox a {
   text-decoration: none;
   padding: 10px 15px;
   background: #cc3232;
   color: white;
   border-radius: 4px;
-  transition:  .7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
-.boxGrid .missionBox a:hover{
+.boxGrid .missionBox a:hover {
   background: #fff;
   color: #cc3232;
 }
-.boxGrid .imgBox .img{
-  background: url('https://dbwgapw6amg93.cloudfront.net/wp-content/uploads/2017/08/developers-working-together.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 400px;
-    max-width: 750px;
+.boxGrid .imgBox .img {
+  background: url("https://dbwgapw6amg93.cloudfront.net/wp-content/uploads/2017/08/developers-working-together.jpg")
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+  max-width: 750px;
 }
 /*END ABOUT*/
 /*SERVICES*/
-#service{
-  background-image:linear-gradient(10deg,rgba(0,0,0,.1) 0,#000 100%), url('http://wallpoper.com/images/00/27/54/51/usb-technology_00275451.png');
+#service {
+  background-image: linear-gradient(10deg, rgba(0, 0, 0, 0.1) 0, #000 100%),
+    url("http://wallpoper.com/images/00/27/54/51/usb-technology_00275451.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 100px;
 }
-.serviceGrid{
+.serviceGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 2em;
   grid-auto-rows: minmax(200px, auto);
 }
-.serviceBox{
-  background: rgba(20, 20, 20, 0.70);
+.serviceBox {
+  background: rgba(20, 20, 20, 0.7);
   border-radius: 5px;
-
 }
-.serviceBox .sLogo{
+.serviceBox .sLogo {
   text-align: center;
   color: #fff;
   font-size: 3em;
   padding: 20px 0;
 }
-.serviceBox h3{
+.serviceBox h3 {
   letter-spacing: 1px;
   text-align: center;
   color: #fff;
   /*padding-bottom: 10px;*/
 }
-.serviceBox p{
+.serviceBox p {
   text-align: center;
   color: #fff;
   padding: 20px 10px;
 }
 /*END SERVICES*/
 /*IMG GALLERY*/
-#imgGallery{
+#imgGallery {
   padding: 100px;
   background: #eee;
 }
-#imgGallery h2{
+#imgGallery h2 {
   color: #cc3232;
   padding: 30px 0;
 }
-.imgCont{
+.imgCont {
   /*max-width: 1200px;*/
   margin: auto;
   border: #fff solid 3px;
@@ -251,7 +254,7 @@ grid-auto-rows: minmax(200px, auto);
   width: 100%;
 }
 
-.imgs{
+.imgs {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
@@ -259,27 +262,27 @@ grid-auto-rows: minmax(200px, auto);
 }
 /*END IMG GALLERY*/
 /*PRICE*/
-#price{
-  background-image:linear-gradient(10deg,rgba(0,0,0,.1) 0,#000 100%), url('http://eskipaper.com/images/cool-wallpapers-hd-3.jpg');
+#price {
+  background-image: linear-gradient(10deg, rgba(0, 0, 0, 0.1) 0, #000 100%),
+    url("http://eskipaper.com/images/cool-wallpapers-hd-3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 100px;
   color: #fff;
 }
-.priceGrid{
+.priceGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 2em;
   grid-auto-rows: minmax(200px, auto);
-
 }
-.priceBox{
-  background: rgba(20, 20, 20, 0.70);
+.priceBox {
+  background: rgba(20, 20, 20, 0.7);
   border-radius: 5px;
   text-align: center;
 }
-.priceBox h2{
+.priceBox h2 {
   text-transform: capitalize;
   font-weight: 500;
   letter-spacing: 1px;
@@ -287,190 +290,187 @@ grid-auto-rows: minmax(200px, auto);
   padding: 20px 0;
   /*border-bottom: 1px #eee solid;*/
 }
-.priceBox .cash{
+.priceBox .cash {
   padding: 20px 0;
-  border-bottom: .5px #eee solid;
+  border-bottom: 0.5px #eee solid;
 }
-.priceBox h4{
+.priceBox h4 {
   font-weight: 300;
 }
-.priceBox span{
+.priceBox span {
   color: #cc3232;
   font-size: 2.5em;
   font-weight: 700;
 }
-.priceBox .liCon{
+.priceBox .liCon {
   padding: 20px 0;
-  border-bottom: .5px #eee solid;
+  border-bottom: 0.5px #eee solid;
 }
-.priceBox ul li{
+.priceBox ul li {
   list-style: none;
   text-transform: capitalize;
-
 }
-.priceBox .quoteBtn{
+.priceBox .quoteBtn {
   padding: 30px 0;
 }
-.priceBox a{
+.priceBox a {
   text-decoration: none;
   padding: 10px 15px;
   background: #cc3232;
   color: #fff;
   border-radius: 4px;
-  transition: .7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
-.priceBox a:hover{
+.priceBox a:hover {
   background: #fff;
   color: #cc3232;
 }
 /*END PRICE*/
 /*QUOTE*/
-#quote{
+#quote {
   background: #eee;
   padding: 100px 0;
 }
-.quoteGrid{
-display: grid;
-grid-template-columns: 50% 50%;
-grid-row-gap: 1em;
-grid-auto-rows: minmax(200px, auto);
+.quoteGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 1em;
+  grid-auto-rows: minmax(200px, auto);
 }
-.needAq h2{
+.needAq h2 {
   color: #cc3232;
   padding-bottom: 20px;
 }
-.needAq p{
+.needAq p {
   padding: 0px 50px 20px 0;
 }
-.formCon{
+.formCon {
   text-align: center;
 }
-.inp{
+.inp {
   padding: 5px 10px;
   width: 49%;
   height: 35px;
 }
-.sub{
+.sub {
   height: 35px;
   margin-top: 20px;
   padding: 5px 10px;
   text-align: left;
   width: 98%;
 }
-.message{
+.message {
   width: 98%;
   height: 100px;
   margin-top: 20px;
   padding: 5px 10px;
 }
-.subj{
+.subj {
   text-align: center;
   padding-top: 10px;
 }
-.subj a{
+.subj a {
   text-decoration: none;
   padding: 10px 35px;
   background: #cc3232;
   color: #fff;
   border-radius: 4px;
-  transition: .7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
-.subj a:hover{
+.subj a:hover {
   background: #fff;
-    color: #cc3232;
+  color: #cc3232;
 }
 /*END QUOTE*/
-footer{
-  background:black;
+footer {
+  background: black;
   padding: 50px 0;
 }
-.contact{
+.contact {
   font-size: 1.1rem;
   display: inline-block;
 }
-.contact a{
+.contact a {
   text-decoration: none;
   color: #eee;
 }
-.contact i{
+.contact i {
   font-size: 1.5rem;
   color: #cc3232;
   /*color: #fff;*/
 }
-.ssm{
+.ssm {
   float: right;
   font-size: 1.5rem;
   /*margin-right: 10px;*/
 }
-.ssm a{
+.ssm a {
   color: #cc3232;
   padding: 10px 10px;
-  transition: .7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
-.ssm a:hover{
+.ssm a:hover {
   color: #fff;
 }
-.copy{
+.copy {
   padding-top: 60px;
   text-align: center;
 }
 
-
 /*PHONE*/
 @media (max-width: 767px) {
-  .menu-icon{
+  .menu-icon {
     display: block;
   }
   /*NAV AREA*/
-  .menu,.logo{
+  .menu,
+  .logo {
     display: none;
   }
-  #nav{
+  #nav {
     padding: 0;
   }
   /*#titleBg{
     padding: 100px 0;
   }*/
-  #titleBg h1{
-
+  #titleBg h1 {
     font-size: 21px;
     padding-bottom: 10px;
   }
-  #titleBg p{
+  #titleBg p {
     font-size: 15px;
   }
-  #titleBg .topBtns{
+  #titleBg .topBtns {
     padding-top: 13px;
-
   }
-  #titleBg .topBtns a{
+  #titleBg .topBtns a {
     font-size: 10px;
     padding: 10px 20px;
   }
   /*ABOUT*/
-  #about{
+  #about {
     padding: 50px 0;
   }
-  #about h2{
+  #about h2 {
     font-size: 1.2rem;
   }
-  #about h4{
-    font-size: .7rem;
+  #about h4 {
+    font-size: 0.7rem;
     padding: 10px 0 15px 0;
     text-align: center;
   }
-  #about h5{
+  #about h5 {
     text-align: center;
     font-size: 1.2rem;
     padding: 10px 0;
   }
-  .boxGrid{
-  grid-template-columns: 1fr;
+  .boxGrid {
+    grid-template-columns: 1fr;
   }
-  .boxGrid .missionBox p{
+  .boxGrid .missionBox p {
     padding: 10px 0 15px 0;
   }
-  .boxGrid .missionBox .readBtn{
+  .boxGrid .missionBox .readBtn {
     font-size: 12px;
     padding: 10px 10px;
     text-align: center;
@@ -479,74 +479,74 @@ footer{
     grid-row: 1 / 2;
   }
   /*SERVICES*/
-  #service{
+  #service {
     padding: 50px 20px;
   }
-  .serviceGrid{
+  .serviceGrid {
     grid-template-columns: 1fr;
     grid-row-gap: 1em;
   }
   /*IMG GALLERY*/
-  #imgGallery{
+  #imgGallery {
     padding: 50px 0;
     background: #eee;
   }
-  #imgGallery h2{
+  #imgGallery h2 {
     text-align: center;
   }
   /*PRICE*/
-  #price{
+  #price {
     padding: 50px 0;
   }
-  .quoteBtn a{
+  .quoteBtn a {
     font-size: 12px;
     padding: 10px 20px;
   }
-  .priceGrid{
+  .priceGrid {
     grid-template-columns: 1fr;
     grid-row-gap: 1em;
   }
   /*QUOTE*/
-  #quote{
+  #quote {
     padding: 50px 0;
   }
-  .quoteGrid{
-  grid-template-columns: 1fr;
+  .quoteGrid {
+    grid-template-columns: 1fr;
   }
-  .needAq p{
+  .needAq p {
     padding: 0;
     width: 100%;
     /*text-align: center;*/
   }
 
-  #quote h2{
+  #quote h2 {
     text-align: center;
   }
-  .subj a{
+  .subj a {
     font-size: 1em;
     padding: 10px 50px;
   }
   /*Footer*/
-  footer{
+  footer {
     padding: 30px 0;
   }
-  .contact{
+  .contact {
     display: none;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
-  .contact a{
-    font-size: .9em;
+  .contact a {
+    font-size: 0.9em;
   }
-  .contact i{
+  .contact i {
     font-size: 1rem;
   }
-  .ssm{
+  .ssm {
     width: 100%;
     text-align: center;
     /*float: right;*/
     /*font-size: 1rem;*/
   }
-  .ssm a{
+  .ssm a {
     padding: 10px 5px;
   }
 }
@@ -557,106 +557,106 @@ footer{
     display: none;
   }
   /*NAV AREA*/
-  .navbar{
+  .navbar {
     padding: 20px 0;
     text-align: center;
   }
-  .navbar ul li a{
+  .navbar ul li a {
     padding: 10px 10px;
   }
-  #titleBg h1{
+  #titleBg h1 {
     font-size: 30px;
     padding-bottom: 20px;
   }
-  #titleBg p{
+  #titleBg p {
     font-size: 14px;
   }
-  #titleBg .topBtns{
+  #titleBg .topBtns {
     padding: 15px 0;
   }
-  #titleBg .topBtns a{
+  #titleBg .topBtns a {
     padding: 10px 30px;
   }
   /*ABOUT*/
-  #about{
+  #about {
     padding: 80px 0;
   }
-  #about h2{
+  #about h2 {
     font-size: 1.3rem;
   }
-  #about h4{
+  #about h4 {
     padding: 10px 0 20px 0;
     text-align: center;
   }
-  #about h5{
+  #about h5 {
     text-align: center;
     padding-top: 10px;
     font-size: 1.3em;
   }
-  .boxGrid{
-  grid-template-columns: 1fr;
+  .boxGrid {
+    grid-template-columns: 1fr;
   }
-  .boxGrid .missionBox p{
+  .boxGrid .missionBox p {
     padding: 15px 0;
   }
-  .boxGrid .missionBox .readBtn{
+  .boxGrid .missionBox .readBtn {
     text-align: center;
   }
-  .boxGrid .missionBox .readBtn a{
-      padding: 10px 30px;
+  .boxGrid .missionBox .readBtn a {
+    padding: 10px 30px;
   }
   .boxGrid .imgBox {
     grid-row: 1 / 2;
   }
   /*SERVICES*/
-  #service{
+  #service {
     padding: 90px;
   }
-  .serviceGrid{
-    grid-template-columns: 1fr;
-      grid-row-gap: 1em;
-  }
-  /*IMG GALLERY*/
-  #imgGallery{
-    padding: 50px 0;
-    background: #eee;
-  }
-  #imgGallery h2{
-    text-align: center;
-  }
-  /*PRICE*/
-  .priceGrid{
+  .serviceGrid {
     grid-template-columns: 1fr;
     grid-row-gap: 1em;
   }
-  .quoteBtn a{
+  /*IMG GALLERY*/
+  #imgGallery {
+    padding: 50px 0;
+    background: #eee;
+  }
+  #imgGallery h2 {
+    text-align: center;
+  }
+  /*PRICE*/
+  .priceGrid {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+  }
+  .quoteBtn a {
     padding: 10px 30px;
   }
   /*QUOTE*/
-  #quote h2{
+  #quote h2 {
     text-align: center;
   }
-  .quoteGrid{
-  grid-template-columns: 1fr;
+  .quoteGrid {
+    grid-template-columns: 1fr;
   }
   /*Footer*/
-  .contact{
+  .contact {
     /*font-size: 1.1rem;*/
     display: block;
     width: 100%;
   }
-  .contact a{
-    font-size: .9em;
+  .contact a {
+    font-size: 0.9em;
   }
-  .contact i{
+  .contact i {
     font-size: 1.3rem;
   }
-  .ssm{
+  .ssm {
     /*display: block;*/
     float: right;
     /*font-size: 1.3rem;*/
   }
-  .ssm a{
+  .ssm a {
     padding: 10px 5px;
   }
 }
@@ -667,66 +667,28 @@ footer{
     font-size: 1.7em;
   }
   /*NAV AREA*/
-  .navbar{
+  .navbar {
     padding: 20px 0;
   }
-  .navbar ul li a{
+  .navbar ul li a {
     padding: 10px 10px;
   }
   /*ABOUT*/
 
-  #about h2{
+  #about h2 {
     font-size: 1.3rem;
   }
-  #about h5{
+  #about h5 {
     font-size: 1.3em;
   }
-  .boxGrid .missionBox .readBtn a{
-      padding: 10px 30px;
+  .boxGrid .missionBox .readBtn a {
+    padding: 10px 30px;
   }
-
-
 }
 /*======================================================*/
 /*extra big*/
 @media (min-width: 1200px) {
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*.pimg2 .con{
 
@@ -734,19 +696,15 @@ footer{
     min-height: 400px;
 }*/
 
-
-
-
 /*.pimg1{
   background-image: url('https://www.brookings.edu/wp-content/uploads/2017/11/metro_20171121_tech-empowers-tech-polarizes-mark-muro.jpg');
   min-height: 400px;
 }*/
 
-
-
-
-@media (max-width:568px) {
-  .pimg1,.pimg2,.pimg3{
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
     background-attachment: scroll;
   }
 }
